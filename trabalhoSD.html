@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trabalho Sistemas Distribuídos, Fernando Francisco Druszcz</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+background-color: #6CBB3C;
+}
+</style></head>
+
+<body><div align="center">
+	<table style="font-family:Verdana; font-size:12pt" width="80%" cellpadding="4" border="0" bgcolor="white">
+
+	<tbody><tr><td>
+
+	<p><b>TRABALHO PRÁTICO 0:</b></p>
+	<p>Tarefa 0:</p>
+		<a href="./tarefas/tarefa0.txt">tarefa0.c</a>
+		<a href="./tarefas/tarefa0.log.txt">Log da tarefa 0</a>
+
+	<p>Tarefa 1:</p>
+		<a href="./tarefas/tarefa1.txt">tarefa1.c</a>
+		<a href="./tarefas/tarefa1.log.txt">Log da tarefa 1</a>
+	<p>Tarefa 2:</p>
+		<a href="./tarefas/tarefa2.txt">tarefa2.c</a>
+		<a href="./tarefas/tarefa2.log.txt">Log da tarefa 2</a>
+	<p>Tarefa 3:</p>
+		<a href="./tarefas/tarefa3.txt">tarefa3.c</a>
+		<a href="./tarefas/tarefa3.log.txt">Log da tarefa 3</a>
+	<p>Tarefa 4:</p>
+		<a href="./tarefas/tarefa4.txt">tarefa4.c</a>
+		<a href="./tarefas/tarefa4.log.txt">Log da tarefa 4</a>
+
+
+	<p>
+	<b>TRABALHO PRÁTICO</b>
+
+	</p>
+	<p><b>Relatório:</b></p> 
+
+	<p>
+		&nbsp;&nbsp;&nbsp;&nbsp; Para começar o trabalho prático, tendo já conhecimento prévio de como a simulação funciona, me debrucei primeiramente sobre como os nodos saberiam quais outros nodos testarem, uma vez que na versão 2 do Vcube a função C(i,s), diferentemente da versão 1, nos diz quem testará i.<br>
+		&nbsp;&nbsp;&nbsp;&nbsp; Tendo isso em mente, resolvi criar uma estrutura que armazene quem cada nodo deverá testar. A ideia inicial era que essa estrutura armazenasse todos os vetores resultantes de C(i,s) a qual o nodo fazia parte, porém aí me veio a dúvida de como armazenar de qual s eram aqueles vetores.<br>
+		&nbsp;&nbsp;&nbsp;&nbsp; Para resolver isso criei uma estrutura (tipoTestar) que armazena o resultado de C(i,s), o i, e o tamanho do vetor resultado. E para cada s, eu crio uma nova estrutura (tipoSequenciaTestes) que contém um vetor da estrutura anterior. E, por fim, para armazenar todos os s de um nodo, eu crio um vetor do tipo tipoSequenciaTestes.      ara cada s, que contém todos os vetores a qual o nodo pertence. Por exemplo, o nodo de índice 3 num sistema com 4 nodos terá a seguinte estrutura: <br>
+
+	</p>
+	<p>
+		&nbsp;&nbsp;&nbsp;&nbsp;tipoSequenciaTestes[0] :=<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tipoTestar[0] :=<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testar nodo 2<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vetor de C(2,0) := [3]<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;tipoSequenciaTestes[1] :=<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tipoTestar[0] :=<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testar nodo 0<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vetor de C(0,1) := [2,3]<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tipoTestar[1] :=<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testar nodo 1<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vetor de C(1,0) := [3,2]<br>
+
+	</p>
+	<p>
+		&nbsp;&nbsp;&nbsp;&nbsp; Como esse sistema tem apenas 4 nodos, ele terá apenas 2 clusters, logo dois vetores do tipoSequenciaTestes. O nodo 3 executará apenas um teste no cluster 0, que é testar o nodo 2, pois C(2,0) := [3]. Já no cluster 1, ele poderá executar até dois testes. Ele testará o nodo 1 pois é o primeiro índice de C(1,0), e caso o 2 esteja falho (ele sabe pois testou no cluster 0), ele testará também o nodo 0,  pois C(0,1) := [2,3] e como o nodo 2 não pode testar 0, 3 deve fazê-lo. <br>
+		&nbsp;&nbsp;&nbsp;&nbsp; De resto não há nenhuma novidade em relação à tarefa 0, além do vetor state que foi implementado na tarefa 3 e é apenas um vetor de inteiros que armazena a quantidade de eventos ocorridos, onde um número ímpar indica que o nodo está falho, e um número par indica que está correto. <br>
+	</p>
+
+	<p><b>Implementação da lógica do algoritmo</b></p>
+
+	<p>
+		&nbsp;&nbsp;&nbsp;&nbsp;Para implementar a lógica de fato do algoritmo fiz o seguinte: ao entrar no estado de teste armazeno em um vetor de inteiros os índices dos vetores que devem ser testados pelo nodo naquele intervalo de testes. Para fazer isso é simples, basta buscar na estrutura previamente descrita em quais vetores o nodo é o primeiro sem falha.
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;Feito isso, faço o teste de fato em cada nodo devido. Quando há uma mudança de estado em relação ao armazenado no vetor state acrescenta um à entrada correspondente. Caso o resultado seja de que o nodo está correto, faz uma busca no vetor state do nodo correto por entradas com valores maiores que a do próprio state do nodo. Assim garantindo que o nodo testador obterá o estado mais atual, e que lhe é possível saber, dos outros nodos.
+		<br>
+
+	</p> 
+	<p><b>Latência e quantidade de testes</b></p>
+
+	<p>
+		&nbsp;&nbsp;&nbsp;&nbsp;Como pode se observar no <a href="./trabalho/log1.txt">log1.txt</a>, num sistema com 4 nodos, ao ocorrer um evento, leva apenas 2 intervalos de testes e 6 testes para que todos os outros 3 nodos saibam do ocorrido. Ao escalar esse mesmo evento para um sistema de 8 nodos, a latência aumenta para 3 intervalos e 21 testes para que todos os outros descubram o evento, como pode-se ver no <a href="./trabalho/log2.txt">log2.txt</a>. E ao fazer o mesmo para um sistema de 16 nodos, a latência vai para 4 intervalos e 60 testes (<a href="./trabalho/log3.txt">log3.txt</a>).
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;Ao mudar o nodo sobre qual ocorre o evento não muda a latência, como podemos ver nos logs <a href="./trabalho/log4.txt">log4.txt</a>, <a href="./trabalho/log5.txt">log5.txt</a> e <a href="./trabalho/log6.txt">log6.txt</a>.
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;No <a href="./trabalho/log7.txt">log7.txt</a> podemos ver conforme os nodos vão falhando em sequência, há um pico de latência quando o cluster mais externo tem apenas um nodo correto. Trecho do log contendo essa informação:
+	</p>
+	<p>
+		&nbsp;&nbsp;&nbsp;&nbsp;O nodo 3 testou o 7 Correto no tempo 390.00 <br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;E recebeu as seguintes novas informações:<br>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     state[14] <- 1<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;O vetor state atualizado do token 3:<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;---Fim dos testes do nodo 3 no intervalo 2--- <br>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;Número total de testes até aqui: 504 <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;!!!Diagnóstico do evento foi concluído!!! <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;---Latência: 7--- <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;---Testes realizados: 58--- <br>
+
+	</p>
+
+	<p><b>Arquivos</b></p>
+	<p>Trabalho:</p>
+		<a href="./trabalho/vcube2.c.txt">vcube2.c</a>
+		<a href="./trabalho/cisj.c.txt">cisj.c</a>
+		<a href="./trabalho/cisj.h.txt">cisj.h</a>
+		<a href="./trabalho/smpl.c.txt">smpl.c</a>
+		<a href="./trabalho/rand.c.txt">rand.c</a>
+		<a href="./trabalho/smpl.h.txt">smpl.h</a>
+		<a href="./trabalho/makefile.txt">makefile</a>
+	<p>Logs:</p>
+		<a href="./trabalho/log1.txt">log1.txt</a>
+		<a href="./trabalho/log2.txt">log2.txt</a>
+		<a href="./trabalho/log3.txt">log3.txt</a>
+		<a href="./trabalho/log4.txt">log4.txt</a>
+		<a href="./trabalho/log5.txt">log5.txt</a>
+		<a href="./trabalho/log6.txt">log6.txt</a>
+		<a href="./trabalho/log7.txt">log7.txt</a>
+		
+
+	</td></tr></tbody>
+</body>
+
+</html>
