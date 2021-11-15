@@ -1,0 +1,29 @@
+O nodo 0 testou: 
+                o nodo 1 Correto no tempo 30.0
+O nodo 1 testou: 
+                o nodo 2 Correto no tempo 30.0
+O nodo 2 testou: 
+                o nodo 0 Correto no tempo 30.0
+O nodo 1 falhou no tempo 31.0
+O nodo 2 falhou no tempo 31.0
+O nodo 0 testou: 
+                o nodo 1 Falho no tempo 60.0
+                o nodo 2 Falho no tempo 60.0
+O nodo 0 testou todos os nodos, e eles estao todos falhos no tempo 60.0
+O nodo 1 recuperou no tempo 61.0
+O nodo 2 recuperou no tempo 61.0
+O nodo 0 testou: 
+                o nodo 1 Correto no tempo 90.0
+O nodo 1 testou: 
+                o nodo 2 Correto no tempo 91.0
+O nodo 2 testou: 
+                o nodo 0 Correto no tempo 91.0
+O nodo 2 falhou no tempo 100.0
+O nodo 0 testou: 
+                o nodo 1 Correto no tempo 120.0
+O nodo 1 testou: 
+                o nodo 2 Falho no tempo 121.0
+                o nodo 0 Correto no tempo 121.0
+O nodo 2 recuperou no tempo 140.0
+O nodo 0 testou: 
+                o nodo 1 Correto no tempo 150.0

@@ -1,0 +1,403 @@
+O nodo 0 testou o 1 Correto no tempo 10.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 0:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | -1 | -1 | -1 | -1 | -1 | -1 |
+---Fim dos testes do nodo 0 no intervalo 0---
+
+Número total de testes até aqui: 1
+O nodo 1 testou o 0 Correto no tempo 10.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 1:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | -1 | -1 | -1 | -1 | -1 | -1 |
+---Fim dos testes do nodo 1 no intervalo 0---
+
+Número total de testes até aqui: 2
+O nodo 2 testou o 3 Correto no tempo 10.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 2:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| -1 | -1 | 0 | 0 | -1 | -1 | -1 | -1 |
+---Fim dos testes do nodo 2 no intervalo 0---
+
+Número total de testes até aqui: 3
+O nodo 3 testou o 2 Correto no tempo 10.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 3:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| -1 | -1 | 0 | 0 | -1 | -1 | -1 | -1 |
+---Fim dos testes do nodo 3 no intervalo 0---
+
+Número total de testes até aqui: 4
+O nodo 4 testou o 5 Correto no tempo 10.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 4:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| -1 | -1 | -1 | -1 | 0 | 0 | -1 | -1 |
+---Fim dos testes do nodo 4 no intervalo 0---
+
+Número total de testes até aqui: 5
+O nodo 5 testou o 4 Correto no tempo 10.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 5:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| -1 | -1 | -1 | -1 | 0 | 0 | -1 | -1 |
+---Fim dos testes do nodo 5 no intervalo 0---
+
+Número total de testes até aqui: 6
+O nodo 6 testou o 7 Correto no tempo 10.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 6:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| -1 | -1 | -1 | -1 | -1 | -1 | 0 | 0 |
+---Fim dos testes do nodo 6 no intervalo 0---
+
+Número total de testes até aqui: 7
+O nodo 7 testou o 6 Correto no tempo 10.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 7:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| -1 | -1 | -1 | -1 | -1 | -1 | 0 | 0 |
+---Fim dos testes do nodo 7 no intervalo 0---
+
+Número total de testes até aqui: 8
+O nodo 0 testou o 2 Correto no tempo 20.00
+	E recebeu as seguintes novas informações:
+		 state[3] <- 0
+O vetor state atualizado do token 0:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | -1 | -1 | -1 | -1 |
+---Fim dos testes do nodo 0 no intervalo 1---
+
+Número total de testes até aqui: 9
+O nodo 1 testou o 3 Correto no tempo 20.00
+	E recebeu as seguintes novas informações:
+		 state[2] <- 0
+O vetor state atualizado do token 1:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | -1 | -1 | -1 | -1 |
+---Fim dos testes do nodo 1 no intervalo 1---
+
+Número total de testes até aqui: 10
+O nodo 2 testou o 0 Correto no tempo 20.00
+	E recebeu as seguintes novas informações:
+		 state[1] <- 0
+O vetor state atualizado do token 2:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | -1 | -1 | -1 | -1 |
+---Fim dos testes do nodo 2 no intervalo 1---
+
+Número total de testes até aqui: 11
+O nodo 3 testou o 1 Correto no tempo 20.00
+	E recebeu as seguintes novas informações:
+		 state[0] <- 0
+O vetor state atualizado do token 3:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | -1 | -1 | -1 | -1 |
+---Fim dos testes do nodo 3 no intervalo 1---
+
+Número total de testes até aqui: 12
+O nodo 4 testou o 6 Correto no tempo 20.00
+	E recebeu as seguintes novas informações:
+		 state[7] <- 0
+O vetor state atualizado do token 4:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| -1 | -1 | -1 | -1 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 4 no intervalo 1---
+
+Número total de testes até aqui: 13
+O nodo 5 testou o 7 Correto no tempo 20.00
+	E recebeu as seguintes novas informações:
+		 state[6] <- 0
+O vetor state atualizado do token 5:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| -1 | -1 | -1 | -1 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 5 no intervalo 1---
+
+Número total de testes até aqui: 14
+O nodo 6 testou o 4 Correto no tempo 20.00
+	E recebeu as seguintes novas informações:
+		 state[5] <- 0
+O vetor state atualizado do token 6:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| -1 | -1 | -1 | -1 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 6 no intervalo 1---
+
+Número total de testes até aqui: 15
+O nodo 7 testou o 5 Correto no tempo 20.00
+	E recebeu as seguintes novas informações:
+		 state[4] <- 0
+O vetor state atualizado do token 7:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| -1 | -1 | -1 | -1 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 7 no intervalo 1---
+
+Número total de testes até aqui: 16
+O nodo 0 testou o 4 Correto no tempo 30.00
+	E recebeu as seguintes novas informações:
+		 state[5] <- 0
+		 state[6] <- 0
+		 state[7] <- 0
+O vetor state atualizado do token 0:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 0 no intervalo 2---
+
+Número total de testes até aqui: 17
+O nodo 1 testou o 5 Correto no tempo 30.00
+	E recebeu as seguintes novas informações:
+		 state[4] <- 0
+		 state[6] <- 0
+		 state[7] <- 0
+O vetor state atualizado do token 1:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 1 no intervalo 2---
+
+Número total de testes até aqui: 18
+O nodo 2 testou o 6 Correto no tempo 30.00
+	E recebeu as seguintes novas informações:
+		 state[4] <- 0
+		 state[5] <- 0
+		 state[7] <- 0
+O vetor state atualizado do token 2:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 2 no intervalo 2---
+
+Número total de testes até aqui: 19
+O nodo 3 testou o 7 Correto no tempo 30.00
+	E recebeu as seguintes novas informações:
+		 state[4] <- 0
+		 state[5] <- 0
+		 state[6] <- 0
+O vetor state atualizado do token 3:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 3 no intervalo 2---
+
+Número total de testes até aqui: 20
+O nodo 4 testou o 0 Correto no tempo 30.00
+	E recebeu as seguintes novas informações:
+		 state[1] <- 0
+		 state[2] <- 0
+		 state[3] <- 0
+O vetor state atualizado do token 4:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 4 no intervalo 2---
+
+Número total de testes até aqui: 21
+O nodo 5 testou o 1 Correto no tempo 30.00
+	E recebeu as seguintes novas informações:
+		 state[0] <- 0
+		 state[2] <- 0
+		 state[3] <- 0
+O vetor state atualizado do token 5:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 5 no intervalo 2---
+
+Número total de testes até aqui: 22
+O nodo 6 testou o 2 Correto no tempo 30.00
+	E recebeu as seguintes novas informações:
+		 state[0] <- 0
+		 state[1] <- 0
+		 state[3] <- 0
+O vetor state atualizado do token 6:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 6 no intervalo 2---
+
+Número total de testes até aqui: 23
+O nodo 7 testou o 3 Correto no tempo 30.00
+	E recebeu as seguintes novas informações:
+		 state[0] <- 0
+		 state[1] <- 0
+		 state[2] <- 0
+O vetor state atualizado do token 7:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 7 no intervalo 2---
+
+Número total de testes até aqui: 24
+O nodo 1 falhou no tempo 35.0
+
+!!!Novo evento ocorreu!!!
+O nodo 0 testou o 1 Falho no tempo 40.00
+O vetor state atualizado do token 0:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 0 no intervalo 0---
+
+Número total de testes até aqui: 25
+O nodo 2 testou o 3 Correto no tempo 40.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 2:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 2 no intervalo 0---
+
+Número total de testes até aqui: 26
+O nodo 3 testou o 2 Correto no tempo 40.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 3:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 3 no intervalo 0---
+
+Número total de testes até aqui: 27
+O nodo 4 testou o 5 Correto no tempo 40.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 4:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 4 no intervalo 0---
+
+Número total de testes até aqui: 28
+O nodo 5 testou o 4 Correto no tempo 40.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 5:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 5 no intervalo 0---
+
+Número total de testes até aqui: 29
+O nodo 6 testou o 7 Correto no tempo 40.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 6:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 6 no intervalo 0---
+
+Número total de testes até aqui: 30
+O nodo 7 testou o 6 Correto no tempo 40.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 7:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 7 no intervalo 0---
+
+Número total de testes até aqui: 31
+O nodo 0 testou o 2 Correto no tempo 50.00
+	E recebeu as seguintes novas informações:
+O nodo 0 testou o 3 Correto no tempo 50.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 0:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 0 no intervalo 1---
+
+Número total de testes até aqui: 33
+O nodo 2 testou o 0 Correto no tempo 50.00
+	E recebeu as seguintes novas informações:
+		 state[1] <- 1
+O vetor state atualizado do token 2:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 2 no intervalo 1---
+
+Número total de testes até aqui: 34
+O nodo 3 testou o 1 Falho no tempo 50.00
+O vetor state atualizado do token 3:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 3 no intervalo 1---
+
+Número total de testes até aqui: 35
+O nodo 4 testou o 6 Correto no tempo 50.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 4:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 4 no intervalo 1---
+
+Número total de testes até aqui: 36
+O nodo 5 testou o 7 Correto no tempo 50.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 5:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 5 no intervalo 1---
+
+Número total de testes até aqui: 37
+O nodo 6 testou o 4 Correto no tempo 50.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 6:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 6 no intervalo 1---
+
+Número total de testes até aqui: 38
+O nodo 7 testou o 5 Correto no tempo 50.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 7:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 7 no intervalo 1---
+
+Número total de testes até aqui: 39
+O nodo 0 testou o 4 Correto no tempo 60.00
+	E recebeu as seguintes novas informações:
+O nodo 0 testou o 5 Correto no tempo 60.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 0:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 0 no intervalo 2---
+
+Número total de testes até aqui: 41
+O nodo 2 testou o 6 Correto no tempo 60.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 2:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 2 no intervalo 2---
+
+Número total de testes até aqui: 42
+O nodo 3 testou o 7 Correto no tempo 60.00
+	E recebeu as seguintes novas informações:
+O vetor state atualizado do token 3:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 3 no intervalo 2---
+
+Número total de testes até aqui: 43
+O nodo 4 testou o 0 Correto no tempo 60.00
+	E recebeu as seguintes novas informações:
+		 state[1] <- 1
+O vetor state atualizado do token 4:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 4 no intervalo 2---
+
+Número total de testes até aqui: 44
+O nodo 5 testou o 1 Falho no tempo 60.00
+O vetor state atualizado do token 5:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 5 no intervalo 2---
+
+Número total de testes até aqui: 45
+O nodo 6 testou o 2 Correto no tempo 60.00
+	E recebeu as seguintes novas informações:
+		 state[1] <- 1
+O vetor state atualizado do token 6:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 6 no intervalo 2---
+
+Número total de testes até aqui: 46
+O nodo 7 testou o 3 Correto no tempo 60.00
+	E recebeu as seguintes novas informações:
+		 state[1] <- 1
+O vetor state atualizado do token 7:
+	 [0] [1] [2] [3] [4] [5] [6] [7]
+	| 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+---Fim dos testes do nodo 7 no intervalo 2---
+
+Número total de testes até aqui: 47
+!!!Diagnóstico do evento foi concluído!!!
+---Latência: 3---
+---Testes realizados: 21---

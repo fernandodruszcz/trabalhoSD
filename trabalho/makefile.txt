@@ -1,0 +1,16 @@
+all: vcube2
+
+vcube2: vcube2.o smpl.o rand.o cisj.o
+	$(LINK.c) -Wall -o $@ -Bstatic vcube2.o smpl.o rand.o cisj.o -lm
+
+smpl.o: smpl.c smpl.h
+	$(COMPILE.c) -g smpl.c
+
+vcube2.o: vcube2.c smpl.h
+	$(COMPILE.c) -g vcube2.c
+
+rand.o: rand.c
+	$(COMPILE.c) -g rand.c
+
+cisj.o: cisj.c
+	$(COMPILE.c) -g cisj.c

@@ -1,0 +1,46 @@
+O nodo 0 testou: 
+                o nodo 1 Correto no tempo 30.0
+	Vetor de estados do nodo 0: | [0] = 0 | [1] = 0 | [2] = -1 | [3] = -1 | [4] = -1 
+O nodo 1 testou: 
+                o nodo 2 Correto no tempo 30.0
+	Vetor de estados do nodo 1: | [0] = -1 | [1] = 0 | [2] = 0 | [3] = -1 | [4] = -1 
+O nodo 2 testou: 
+                o nodo 3 Correto no tempo 30.0
+	Vetor de estados do nodo 2: | [0] = -1 | [1] = -1 | [2] = 0 | [3] = 0 | [4] = -1 
+O nodo 3 testou: 
+                o nodo 4 Correto no tempo 30.0
+	Vetor de estados do nodo 3: | [0] = -1 | [1] = -1 | [2] = -1 | [3] = 0 | [4] = 0 
+O nodo 4 testou: 
+                o nodo 0 Correto no tempo 30.0
+	Vetor de estados do nodo 4: | [0] = 0 | [1] = -1 | [2] = -1 | [3] = -1 | [4] = 0 
+O nodo 1 falhou no tempo 31.0
+O nodo 2 falhou no tempo 31.0
+O nodo 0 testou: 
+                o nodo 1 Falho no tempo 60.0
+                o nodo 2 Falho no tempo 60.0
+                o nodo 3 Correto no tempo 60.0
+	Vetor de estados do nodo 0: | [0] = 0 | [1] = 1 | [2] = -1 | [3] = 0 | [4] = -1 
+O nodo 3 testou: 
+                o nodo 4 Correto no tempo 60.0
+	Vetor de estados do nodo 3: | [0] = -1 | [1] = -1 | [2] = -1 | [3] = 0 | [4] = 0 
+O nodo 4 testou: 
+                o nodo 0 Correto no tempo 60.0
+	Vetor de estados do nodo 4: | [0] = 0 | [1] = -1 | [2] = -1 | [3] = -1 | [4] = 0 
+O nodo 1 recuperou no tempo 61.0
+O nodo 0 testou: 
+                o nodo 1 Correto no tempo 90.0
+	Vetor de estados do nodo 0: | [0] = 0 | [1] = 2 | [2] = -1 | [3] = 0 | [4] = -1 
+O nodo 3 testou: 
+                o nodo 4 Correto no tempo 90.0
+	Vetor de estados do nodo 3: | [0] = -1 | [1] = -1 | [2] = -1 | [3] = 0 | [4] = 0 
+O nodo 4 testou: 
+                o nodo 0 Correto no tempo 90.0
+	Vetor de estados do nodo 4: | [0] = 0 | [1] = -1 | [2] = -1 | [3] = -1 | [4] = 0 
+O nodo 1 testou: 
+                o nodo 2 Falho no tempo 91.0
+                o nodo 3 Correto no tempo 91.0
+	Vetor de estados do nodo 1: | [0] = -1 | [1] = 0 | [2] = 1 | [3] = 0 | [4] = -1 
+O nodo 2 recuperou no tempo 92.0
+O nodo 0 testou: 
+                o nodo 1 Correto no tempo 120.0
+	Vetor de estados do nodo 0: | [0] = 0 | [1] = 2 | [2] = -1 | [3] = 0 | [4] = -1 
